@@ -1,0 +1,151 @@
+:root {
+  --cor-fundo__claro: #365486;
+  --cor-letra__titulo: white;
+  --cor-fundo__titulo: #0D0D0D;
+  --cor-botoes: #0F1035;
+  --cor-botoes__letra: white;
+  --cor-hover:#7FC7D9;
+  --cor-letra__saida: white;
+}
+
+body {
+  background-color: var(--cor-fundo__claro);
+  margin-top: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0px 0px 0px 10px;
+}
+
+.meu-header {
+  padding: 10px 20px;
+  height: 60px;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.titulo {
+  margin-right: 4px;
+  color: var(--cor-letra__titulo);
+}
+
+.titulo__img {
+  max-height: 50px; 
+  margin-top: 5px; 
+  margin-bottom: 4px;
+  width: 35px;
+}
+
+input[type="text"] {
+  padding: 4px; 
+  border: 1px solid #ccc; 
+  border-radius: 0.5rem; 
+  outline: none; 
+  margin-right: 8px;
+  height: 1.5rem; 
+
+}
+
+input[type="text"]:focus {
+  border-color: black; 
+}
+
+button {
+  padding: 4px 8px;
+  background-color: var(--cor-botoes);
+  color: var(--cor-botoes__letra);
+  border: none;
+  cursor: pointer;
+  height: 2rem; 
+  border-radius: 1rem;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
+
+.novatarefa {
+  margin: 0px 0px 10px 0px;
+}
+
+.checkbox-letrasaida-container {
+  display: flex;
+  align-items: center;
+}
+
+.lilink {
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lilink .concluida {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  
+}
+
+.letrasaida {
+  color: var(--cor-letra__saida);
+  margin-right: 20px;
+  white-space: pre-line;
+
+  
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.editar__remover-container {
+  display: flex;
+  align-items: center;
+}
+
+.editar__remover {
+  margin-right: 20px;
+  flex-shrink: 0; 
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+
+  .letrasaida {
+    color: var(--cor-letra__saida);
+    margin-right: 20px;
+    white-space: pre-line;
+  }
+  
+  .editar__remover-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .editar__remover {
+    margin-right: 20px;
+    flex-shrink: 0; 
+  }
+  
+
+}
